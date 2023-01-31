@@ -15,6 +15,7 @@
 		A24BF73A2987E616009569B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24BF7382987E616009569B7 /* LaunchScreen.storyboard */; };
 		A24BF7422987EA13009569B7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24BF7412987EA13009569B7 /* SearchViewController.swift */; };
 		A24BF7442987EA3D009569B7 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24BF7432987EA3D009569B7 /* FavoritesListViewController.swift */; };
+		A2763EEA2989520100F65EE4 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2763EE92989520100F65EE4 /* FollowerListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A24BF73B2987E616009569B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24BF7412987EA13009569B7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A24BF7432987EA3D009569B7 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
+		A2763EE92989520100F65EE4 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				A24BF7432987EA3D009569B7 /* FavoritesListViewController.swift */,
 				A241148429892ACC00313024 /* GFButton.swift */,
 				A241148629893EB500313024 /* GFTextField.swift */,
+				A2763EE92989520100F65EE4 /* FollowerListViewController.swift */,
 			);
 			path = "Github Followers";
 			sourceTree = "<group>";
@@ -146,6 +149,7 @@
 				A241148729893EB500313024 /* GFTextField.swift in Sources */,
 				A24BF7422987EA13009569B7 /* SearchViewController.swift in Sources */,
 				A241148529892ACC00313024 /* GFButton.swift in Sources */,
+				A2763EEA2989520100F65EE4 /* FollowerListViewController.swift in Sources */,
 				A24BF72E2987E615009569B7 /* AppDelegate.swift in Sources */,
 				A24BF7442987EA3D009569B7 /* FavoritesListViewController.swift in Sources */,
 				A24BF7302987E615009569B7 /* SceneDelegate.swift in Sources */,
