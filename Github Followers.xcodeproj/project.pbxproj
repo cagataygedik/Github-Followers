@@ -23,6 +23,7 @@
 		A24BF7442987EA3D009569B7 /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24BF7432987EA3D009569B7 /* FavoritesListViewController.swift */; };
 		A2763EEA2989520100F65EE4 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2763EE92989520100F65EE4 /* FollowerListViewController.swift */; };
 		A28DA4F5298BAD200056EE93 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28DA4F4298BAD200056EE93 /* NetworkManager.swift */; };
+		A28DA4F8298C37BC0056EE93 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28DA4F7298C37BC0056EE93 /* ErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A24BF7432987EA3D009569B7 /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 		A2763EE92989520100F65EE4 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
 		A28DA4F4298BAD200056EE93 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A28DA4F7298C37BC0056EE93 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		A24BF72C2987E615009569B7 /* Github Followers */ = {
 			isa = PBXGroup;
 			children = (
+				A28DA4F6298C37A20056EE93 /* Utilities */,
 				A28DA4F3298BAD090056EE93 /* Managers */,
 				A2221652298A637C00C86F90 /* Models */,
 				A222164A298A5D8C00C86F90 /* Screens */,
@@ -175,6 +178,14 @@
 				A28DA4F4298BAD200056EE93 /* NetworkManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		A28DA4F6298C37A20056EE93 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A28DA4F7298C37BC0056EE93 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +265,7 @@
 				A2221654298A638900C86F90 /* Follower.swift in Sources */,
 				A24BF7422987EA13009569B7 /* SearchViewController.swift in Sources */,
 				A241148529892ACC00313024 /* GFButton.swift in Sources */,
+				A28DA4F8298C37BC0056EE93 /* ErrorMessage.swift in Sources */,
 				A2763EEA2989520100F65EE4 /* FollowerListViewController.swift in Sources */,
 				A2221645298A4CBA00C86F90 /* GFBodyLabel.swift in Sources */,
 				A2221643298A4B5E00C86F90 /* GFTitleLabel.swift in Sources */,
