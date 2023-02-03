@@ -76,12 +76,12 @@
 		A222164B298A5DC100C86F90 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				A24A501E298D313700DDB0B5 /* ImageViews */,
 				A28E1144298D0A9500AD3098 /* Cells */,
 				A2221651298A5EF400C86F90 /* ViewControllers */,
 				A2221650298A5ED100C86F90 /* TextFields */,
 				A222164F298A5EC000C86F90 /* Buttons */,
 				A222164E298A5EA500C86F90 /* Labels */,
-				A28E1147298D0B5A00AD3098 /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -145,6 +145,14 @@
 				A2221655298A63D000C86F90 /* User.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		A24A501E298D313700DDB0B5 /* ImageViews */ = {
+			isa = PBXGroup;
+			children = (
+				A28E1147298D0B5A00AD3098 /* GFAvatarImageView.swift */,
+			);
+			path = ImageViews;
 			sourceTree = "<group>";
 		};
 		A24BF7212987E615009569B7 = {
