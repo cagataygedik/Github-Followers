@@ -27,6 +27,7 @@
 		A28DA4F8298C37BC0056EE93 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28DA4F7298C37BC0056EE93 /* ErrorMessage.swift */; };
 		A28E1146298D0ABF00AD3098 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28E1145298D0ABF00AD3098 /* FollowerCell.swift */; };
 		A28E1148298D0B5A00AD3098 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28E1147298D0B5A00AD3098 /* GFAvatarImageView.swift */; };
+		A2A9F699298FED9800D2033D /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A9F698298FED9800D2033D /* UserInfoViewController.swift */; };
 		A2E4E16F298E9C1500291871 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E4E16E298E9C1500291871 /* GFEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		A28DA4F7298C37BC0056EE93 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		A28E1145298D0ABF00AD3098 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		A28E1147298D0B5A00AD3098 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		A2A9F698298FED9800D2033D /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		A2E4E16E298E9C1500291871 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 				A24BF7412987EA13009569B7 /* SearchViewController.swift */,
 				A24BF7432987EA3D009569B7 /* FavoritesListViewController.swift */,
 				A2763EE92989520100F65EE4 /* FollowerListViewController.swift */,
+				A2A9F698298FED9800D2033D /* UserInfoViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				A2E4E16F298E9C1500291871 /* GFEmptyStateView.swift in Sources */,
 				A28DA4F5298BAD200056EE93 /* NetworkManager.swift in Sources */,
 				A24BF72E2987E615009569B7 /* AppDelegate.swift in Sources */,
+				A2A9F699298FED9800D2033D /* UserInfoViewController.swift in Sources */,
 				A24BF7442987EA3D009569B7 /* FavoritesListViewController.swift in Sources */,
 				A24BF7302987E615009569B7 /* SceneDelegate.swift in Sources */,
 			);
