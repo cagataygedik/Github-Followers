@@ -39,6 +39,7 @@
 		A2B40DD229965CA00075F4E0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B40DD129965CA00075F4E0 /* Constants.swift */; };
 		A2E4E16F298E9C1500291871 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E4E16E298E9C1500291871 /* GFEmptyStateView.swift */; };
 		A2F1DAA3299CDF6A00891B10 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F1DAA2299CDF6A00891B10 /* PersistanceManager.swift */; };
+		A2F1DAA5299D2E6700891B10 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F1DAA4299D2E6700891B10 /* FavoritesCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		A2B40DD129965CA00075F4E0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A2E4E16E298E9C1500291871 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		A2F1DAA2299CDF6A00891B10 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
+		A2F1DAA4299D2E6700891B10 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				A28E1145298D0ABF00AD3098 /* FollowerCell.swift */,
+				A2F1DAA4299D2E6700891B10 /* FavoritesCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			files = (
 				A2221656298A63D000C86F90 /* User.swift in Sources */,
 				A2221647298A4D7700C86F90 /* GFAlertViewController.swift in Sources */,
+				A2F1DAA5299D2E6700891B10 /* FavoritesCell.swift in Sources */,
 				A2221649298A597D00C86F90 /* UIViewController+Extension.swift in Sources */,
 				A241148729893EB500313024 /* GFTextField.swift in Sources */,
 				A2221654298A638900C86F90 /* Follower.swift in Sources */,
