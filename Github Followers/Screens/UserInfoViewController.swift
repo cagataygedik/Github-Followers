@@ -8,11 +8,11 @@
 import UIKit
 
 protocol UserInfoViewControllerDelegate: AnyObject {
-    func didTapGitHubProfile(for user: User)
-    func didTapGetFollowers(for user: User)
+    func didRequestFollowers(for username: String)
 }
 
 class UserInfoViewController: GFDataLoadingViewController {
+    
     
     //Container Views
     let headerView = UIView()
@@ -21,7 +21,7 @@ class UserInfoViewController: GFDataLoadingViewController {
     let dateLabel = GFBodyLabel(textAlignment: .center)
     
     var username: String!
-    weak var delegate: FollowerListViewControllerDelegate!
+    weak var delegate: UserInfoViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,15 +54,9 @@ class UserInfoViewController: GFDataLoadingViewController {
     }
     
     func configureUIElements(with user: User) {
-        let repoItemViewController = GFRepoItemViewController(user: user)
-        repoItemViewController.delegate = self
-        
-        let followerItemViewController = GFFollowerItemViewController(user: user)
-        followerItemViewController.delegate = self
-        
         self.add(childVC: GFUserInfoHeaderViewController(user: user), to: self.headerView)
-        self.add(childVC: repoItemViewController, to: self.itemViewOne)
-        self.add(childVC: followerItemViewController, to: self.itemViewTwo)
+        self.add(childVC: GFRepoItemViewController(user: user, delegate: self), to: self.itemViewOne)
+        self.add(childVC: GFFollowerItemViewController(user: user, delegate: self), to: self.itemViewTwo)
         self.dateLabel.text = "GitHub since \(user.createdAt.convertToMonthYearFormat())"
     }
     
@@ -71,7 +65,7 @@ class UserInfoViewController: GFDataLoadingViewController {
         view.addSubview(itemViewOne)
         view.addSubview(itemViewTwo)
         view.addSubview(dateLabel)
-                
+        
         headerView.translatesAutoresizingMaskIntoConstraints = false
         itemViewOne.translatesAutoresizingMaskIntoConstraints = false
         itemViewTwo.translatesAutoresizingMaskIntoConstraints = false
@@ -84,7 +78,7 @@ class UserInfoViewController: GFDataLoadingViewController {
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             headerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             headerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            headerView.heightAnchor.constraint(equalToConstant: 180),
+            headerView.heightAnchor.constraint(equalToConstant: 210),
             
             itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
             itemViewOne.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
@@ -99,7 +93,7 @@ class UserInfoViewController: GFDataLoadingViewController {
             dateLabel.topAnchor.constraint(equalTo: itemViewTwo.bottomAnchor, constant: padding),
             dateLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             dateLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            dateLabel.heightAnchor.constraint(equalToConstant: 18)
+            dateLabel.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
@@ -115,7 +109,7 @@ class UserInfoViewController: GFDataLoadingViewController {
     }
 }
 
-extension UserInfoViewController: UserInfoViewControllerDelegate {
+extension UserInfoViewController: GFRepoItemViewControllerDelegate {
     
     func didTapGitHubProfile(for user: User) {
         guard let url = URL(string:  user.htmlUrl) else {
@@ -124,6 +118,9 @@ extension UserInfoViewController: UserInfoViewControllerDelegate {
         }
         presentSafariViewController(with: url)
     }
+}
+
+extension UserInfoViewController: GFFollowerItemViewControllerDelegate {
     
     func didTapGetFollowers(for user: User) {
         guard user.followers != 0 else {
@@ -133,6 +130,10 @@ extension UserInfoViewController: UserInfoViewControllerDelegate {
         delegate.didRequestFollowers(for: user.login)
         dismissViewController()
     }
-    
-    
 }
+
+
+
+
+
+
