@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol ItemInfoViewControllerDelegate: AnyObject {
+    func didTapGithubProfile(for user: User)
+    func didTapGetFollowers(for user: User)
+}
+
 class GFItemInfoViewController: UIViewController {
     
     let stackView = UIStackView()
