@@ -12,6 +12,10 @@ class GFTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureTabBar()
+    }
+    
+    func configureTabBar() {
         UITabBar.appearance().tintColor = .systemGreen
         UINavigationBar.appearance().tintColor = .systemGreen
         viewControllers = [createSearchNavigatonController(), createFavoritesListNavigationController()]
